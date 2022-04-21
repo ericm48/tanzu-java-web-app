@@ -15,3 +15,7 @@ spec:
       url: https://github.com/ericm48/tanzu-java-web-app
       ref:
         branch: main
+  env: 
+    - name: MY_VARIABLE
+      value: "ValueFrom: workload.yaml"
+
