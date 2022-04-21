@@ -21,5 +21,6 @@ k8s_custom_deploy(
 k8s_resource('tanzu-java-web-app', port_forwards=["8080:8080"],
             extra_pod_selectors=[{'serving.knative.dev/service': 'tanzu-java-web-app'}])
 
+update_settings ( max_parallel_updates = 3 , k8s_upsert_timeout_secs = 30 , suppress_unused_image_warnings = None) 
 
 allow_k8s_contexts('arn:aws:eks:us-west-1:615826253182:cluster/eks-eric-tap-cluster01')            
