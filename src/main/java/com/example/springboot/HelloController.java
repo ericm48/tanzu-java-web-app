@@ -10,7 +10,16 @@ public class HelloController
 	@RequestMapping("/")
 	public String index() 
 	{
-		String message = "Greetings from Spring Boot + Tanzu! TimeNow: 11.20am 21-Apr-2022 !";
+		String message = "Greetings from Spring Boot + Tanzu! CustomValueBe: ";
+
+		String messsageFromVar = null;
+
+		messsageFromVar = System.getenv("MY_VARIABLE");
+
+		if ( messsageFromVar != null )
+		{
+			message = message + messsageFromVar;
+		}
 
 		return( message );
 	}
