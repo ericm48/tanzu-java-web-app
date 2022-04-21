@@ -2,7 +2,7 @@ SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='index.docker.io/ericm24/tanzu-
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
 NAMESPACE = os.getenv("NAMESPACE", default='dev1')
 
-os.putenv("MY_VARIABLE", "TheNewValueIs: 11.37AM 21-Apr-2022")
+os.putenv("MY_VARIABLE", "ValueFromTiltFileIs: 11.37AM 21-Apr-2022")
 
 k8s_custom_deploy(
     'tanzu-java-web-app',
