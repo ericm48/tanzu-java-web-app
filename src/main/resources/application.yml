@@ -3,7 +3,7 @@ spring:
     name: tanzu-java-web-app
 env: 
   - name: MY_VARIABLE
-    value: "ValueFrom: application.yaml"    
+    value: "ValueFrom: application.yaml-1"
 management:
   endpoints:
     web:
@@ -12,3 +12,6 @@ management:
   endpoint:
     health:
       show-details: always
+  env: 
+    - name: MY_VARIABLE
+      value: "ValueFrom: application.yaml-2"
