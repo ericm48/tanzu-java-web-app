@@ -13,12 +13,14 @@ import org.springframework.boot.actuate.trace.http.InMemoryHttpTraceRepository;
 @SpringBootApplication
 public class Application {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		SpringApplication.run(Application.class, args);
 	}
 
 	@Bean
-	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
+	public CommandLineRunner commandLineRunner(ApplicationContext ctx) 
+	{
 		return args -> {
 
 			System.out.println("Let's inspect the beans provided by Spring Boot:");
@@ -34,7 +36,8 @@ public class Application {
 	}
 	
     @Bean
-	public HttpTraceRepository htttpTraceRepository() {
+	public HttpTraceRepository htttpTraceRepository() 
+	{
 		return new InMemoryHttpTraceRepository();
 	}
 }

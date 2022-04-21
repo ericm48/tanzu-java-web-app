@@ -10,7 +10,7 @@ public class HelloController
 	@RequestMapping("/")
 	public String index() 
 	{
-		String message = "Greetings from Spring Boot + Tanzu! 21-Apr-2022!";
+		String message = "Greetings from Spring Boot + Tanzu! TimeNow: 11.20am 21-Apr-2022 !";
 
 		return( message );
 	}
