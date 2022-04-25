@@ -27,7 +27,7 @@
             "mainClass": "com.example.springboot.Application",
             "env": 
             {
-                "MY_VARIABLE": "ValueFrom: launch.json"
+                "MY_VARIABLE": "ValueFrom: VSCode: launch.json"
             },            
             "projectName": "demo"
         },
