@@ -10,18 +10,21 @@ public class HelloController
 	@RequestMapping("/")
 	public String index() 
 	{
-		String message = "Greetings from Spring Boot + Tanzu! CustomValueBe: ";
-
-		String messsageFromVar = null;
+		String message1 		= "Greetings from Spring Boot + Tanzu! CustomValueBe: |";
+		String message2  		= "| The last part, part Duex...";		
+		String messageOut 		= null;
+		String messsageFromVar 	= null;
 
 		messsageFromVar = System.getenv("MY_VARIABLE");
 
 		if ( messsageFromVar != null )
 		{
-			message = message + messsageFromVar;
+			messageOut = message1 + messsageFromVar + message2; 
 		}
 
-		return( message );
+		System.out.println(messageOut);
+
+		return( messageOut );
 	}
 
 }
