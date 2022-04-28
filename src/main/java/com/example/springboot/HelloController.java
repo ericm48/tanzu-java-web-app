@@ -11,7 +11,7 @@ public class HelloController
 	public String index() 
 	{
 		String message1 		= "Greetings from Spring Boot + Tanzu! CustomValueBe: |";
-		String message2  		= "| The last part, part Duex...";		
+		String message2  		= "| The last part, part Duex, More, More, More...";		
 		String messageOut 		= null;
 		String messsageFromVar 	= null;
 
