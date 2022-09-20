@@ -10,9 +10,9 @@ public class HelloController
 	@RequestMapping("/")
 	public String index() 
 	{
-		String message1 	= "Greetings from Spring Boot + Tanzu! CustomValueBe: |";
-		String message2  	= "| The last part!";		
-		String messageOut 	= null;
+		String message1 		= "Greetings from Spring Boot + Tanzu2222! CustomValueBe: |";
+		String message2  		= "| The last part!";		
+		String messageOut 		= null;
 		String messsageFromVar 	= null;
 
 		messsageFromVar = System.getenv("MY_VARIABLE");
