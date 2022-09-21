@@ -17,5 +17,5 @@ spec:
         branch: main
   env: 
     - name: MY_VARIABLE
-      value: "ValueFrom: workload.yaml"
+      value: "Value From Here: workload.yaml"
 
