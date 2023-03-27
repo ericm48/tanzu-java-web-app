@@ -24,7 +24,7 @@ public class Application
 	{
 		return args -> {
 
-			System.out.println("Shall WE Inspect the beans provided by Spring Boot  HHHHH: ");
+			System.out.println("Shall WE Inspect the beans provided by Spring Boot: ");
 
 			String[] beanNames = ctx.getBeanDefinitionNames();
 			Arrays.sort(beanNames);
