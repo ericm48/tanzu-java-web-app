@@ -5,6 +5,7 @@ LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
 NAMESPACE = os.getenv("NAMESPACE", default='dev1')
 
 allow_k8s_contexts('arn:aws:eks:us-west-1:615826253182:cluster/eks-eric-tap-cluster01') 
+#allow_k8s_contexts('arn:aws:eks:us-west-1:615826253182:cluster/eks-eric-tap-cluster06')
 
 k8s_custom_deploy(
     'tanzu-java-web-app',
